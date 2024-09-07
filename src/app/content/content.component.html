@@ -1,0 +1,204 @@
+<div class="content">
+  <!-- Раздел с id section1 -->
+  <h2 id="section1">1 Вывод на консоль</h2>
+  <p>В Java для вывода текста на консоль используются функции <code>print</code> и <code>println</code>. <code>println</code> добавляет символ новой строки после вывода текста, тогда как <code>print</code> - нет. Это означает, что вывод, следующий за <code>println</code>, начнется с новой строки, в то время как вывод после <code>print</code> продолжится на той же строке.</p>
+
+  <h3>Пример ввода и вывода:</h3>
+  <pre class="line-numbers"><code class="java">
+// Пример использования функций print и println
+public class PrintExample &#123;
+    public static void main(String[] args) &#123;
+        System.out.print("Hello");
+        System.out.print(", ");
+        System.out.print("World");
+        System.out.println("!");
+        System.out.println("Это новая строка.");
+    &#125;
+&#125;
+  </code></pre>
+
+  <p>В результате выполнения этой программы на консоль будет выведено:</p>
+  <pre><code>
+Hello, World!
+Это новая строка.
+  </code></pre>
+
+
+  <div class="section-separator"></div>
+
+  <!-- Раздел с id section1-1 -->
+  <h2 id="section1-1">1-1 Выводим в одну строку "Hello, world!"</h2>
+  <p>Написать программу, которая выводит на экран текст "Hello world!".</p>
+
+  <h3>Решение:</h3>
+  <pre><code class="java">
+// Декларируем класс HelloWorld
+public class HelloWorld &#123;
+    // Декларируем главный метод main
+    public static void main(String[] args) &#123;
+        // Выводим на экран строку "Hello world!" с помощью метода println
+        System.out.print("Hello, world!");
+    &#125;
+&#125;
+  </code></pre>
+
+  <p>В результате выполнения этой программы на консоль будет выведено:</p>
+  <pre><code>
+Hello, world!
+  </code></pre>
+
+  <h3>Задания для самостоятельной работы:</h3>
+  <ul>
+    <li>Вывести на экран в одну строку:
+      <ul>
+        <li>"Я изучаю язык программирования - Java!"</li>
+        <li>"Алёна любит учиться!"</li>
+        <li>"Java один из самых популярных языков программирования!"</li>
+        <li>"Java основан 23 мая 1995г. Джеймсом Гослингом в компании Sun Microsystems."</li>
+        <li>"Компания Oracle выкупила права на Java."</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="section-separator"></div>
+
+  <!-- Раздел с id section1-2 -->
+  <h2 id="section1-2">1-2 Выводим print и println</h2>
+  <p>Написать программу, которая выводит на экран текст с новой строки "Hello, world!".</p>
+  <pre><code class="java">
+// Декларируем класс HelloWorld
+public class HelloWorld &#123;
+    // Декларируем главный метод main
+    public static void main(String[] args) &#123;
+        // Выводим на экран строку "Hello, " с помощью метода println
+        System.out.println("Hello, ");
+        // Выводим на экран строку "world!" с новой строки
+        System.out.println("world!");
+    &#125;
+&#125;
+  </code></pre>
+
+  <h3>Задания для самостоятельной работы:</h3>
+  <ul>
+    <li>Вывести каждое предложение с новой строки:
+      <ul>
+        <li>"Я изучаю язык программирования - Java!"</li>
+        <li>"Алёна любит учиться!"</li>
+        <li>"Java один из самых популярных языков программирования!"</li>
+        <li>"Java основан 23 мая 1995г. Джеймсом Гослингом в компании Sun Microsystems."</li>
+        <li>"Компания Oracle выкупила права на Java."</li>
+      </ul>
+    </li>
+  </ul>
+
+
+  <div class="section-separator"></div>
+  <!-- Раздел с id section1-3 -->
+  <h2 id="section1-3">1-3 Выводим цветом красным "Hello, " и синим "world!"</h2>
+
+  <p>Для подсвечивания цвета слов, фона разными цветами, жирного шрифта и сброса есть ANSI-коды:</p>
+  <h4>Цвета текста:</h4>
+  <ul>
+    <li><span style="color: red;">красный</span> - <code>"\u001B[31m"</code></li>
+    <li><span style="color: yellow;">желтый</span> - <code>"\u001B[33m"</code></li>
+    <li><span style="color: green;">зеленый</span> - <code>"\u001B[32m"</code></li>
+    <li><span style="color: blue;">синий</span> - <code>"\u001B[34m"</code></li>
+    <li><span style="color: white; background-color: black;">белый</span> - <code>"\u001B[37m"</code></li>
+  </ul>
+  <h4>Цвета фона:</h4>
+  <ul>
+    <li><span style="background-color: red;">красный фон</span> - <code>"\u001B[41m"</code></li>
+    <li><span style="background-color: yellow;">желтый фон</span> - <code>"\u001B[43m"</code></li>
+    <li><span style="background-color: green;">зеленый фон</span> - <code>"\u001B[42m"</code></li>
+    <li><span style="background-color: blue;">синий фон</span> - <code>"\u001B[44m"</code></li>
+    <li><span style="background-color: white;">белый фон</span> - <code>"\u001B[47m"</code></li>
+    <li>сброс цвета - <code>"\u001B[0m"</code></li>
+    <li>жирный шрифт - <code>"\u001B[1m"</code></li>
+  </ul>
+
+  <h3>Написать программу, которая выводит на консоль "Hello, " и синим "world!":</h3>
+  <pre><code class="java">
+// Пример использования ANSI-кодов для цветного вывода
+public class ColorExample &#123;
+    public static void main(String[] args) &#123;
+        // ANSI-код для сброса цвета
+        final String RESET = "\u001B[0m";
+        // ANSI-коды для цветов
+        final String RED = "\u001B[31m";
+        final String BLUE = "\u001B[34m";
+
+        // Вывод текста с использованием цветов
+        System.out.print(RED + "Hello, " + RESET);
+        System.out.print(BLUE + "world!" + RESET);
+    &#125;
+&#125;
+  </code></pre>
+  <p>В результате выполнения этой программы на консоль будет выведено:</p>
+  <pre><code>
+    <span style="color: red;">Hello, </span><span style="color: blue;">world!</span>
+  </code></pre>
+  <h3>Задания для самостоятельной работы:</h3>
+  <ul>
+    <li>Написать красным <span style="color: red;">"Я изучаю язык программирования - Java!"</span></li>
+    <li>Написать желтым <span style="color: yellow;">"Алёна любит учиться!"</span></li>
+    <li>Написать зеленым <span style="color: green;">"Java один из самых популярных языков программирования!"</span></li>
+    <li>Написать на синем фоне <span style="background-color: blue;">"Java основан 23 мая 1995г. Джеймсом Гослингом в компании Sun Microsystems."</span></li>
+    <li>Написать на желтом фоне красным цветом <span style="color: red; background-color: yellow;"> Oracle выкупила права на Java."</span></li>
+  </ul>
+
+
+
+<!--  <div class="section-separator"></div>-->
+<!--  &lt;!&ndash; Раздел с id section1-4 &ndash;&gt;-->
+<!--  <h2 id="section1-4">1-4 Выводим разными цветами заголовок таблицы. </h2>-->
+
+
+
+<!--  <div class="section-separator"></div>-->
+<!--  &lt;!&ndash; Раздел с id section1-5 &ndash;&gt;-->
+<!--  <h2 id="section1-5">1-5 Вводим с клавиатуры имя и выводим на консоль "Hello, name!"</h2>-->
+
+
+
+<!--  <div class="section-separator"></div>-->
+<!--  &lt;!&ndash; Раздел с id section2 &ndash;&gt;-->
+<!--  <h2 id="section2">2 Операторы +-*/% и другие</h2>-->
+
+
+
+<!--  <div class="section-separator"></div>-->
+<!--  &lt;!&ndash; Раздел с id section2-1 &ndash;&gt;-->
+<!--  <h2 id="section2-1">2-1 Задача на сложение вычитание умножение и деление и остаток от деления</h2>-->
+
+
+<!--  <div class="section-separator"></div>-->
+<!--  &lt;!&ndash; Раздел с id section2-2 &ndash;&gt;-->
+<!--  <h2 id="section2-2">2-2 Задача на оператор += или -= или *=</h2>-->
+
+
+<!--  <div class="section-separator"></div>-->
+<!--  &lt;!&ndash; Раздел с id section2-3 &ndash;&gt;-->
+<!--  <h2 id="section2-3">2-3 Задача на проверка на равенство или не равенство</h2>-->
+
+
+<!--  <div class="section-separator"></div>-->
+<!--  &lt;!&ndash; Раздел с id section2-4 &ndash;&gt;-->
+<!--  <h2 id="section2-4">2-4 Задача на логический оператор >> или << или ~</h2>-->
+
+
+<!--  <div class="section-separator"></div>-->
+<!--  &lt;!&ndash; Раздел с id section2-5 &ndash;&gt;-->
+<!--  <h2 id="section2-5">2-5 Задача на ++ и &#45;&#45;</h2>-->
+
+
+
+<!--  <div class="section-separator"></div>-->
+<!--  &lt;!&ndash; Раздел с id section2-6 &ndash;&gt;-->
+<!--  <h2 id="section2-6">2-6 Задача на сколько денег нужно на покупку 4 товаров по разным ценам</h2>-->
+
+
+
+
+
+
+</div>

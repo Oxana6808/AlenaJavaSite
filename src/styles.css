@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.sidebar {
+  width: 250px; /* Задаем фиксированную ширину бокового меню */
+  height: 100vh;
+  overflow-y: auto; /* Добавляем прокрутку */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+mat-nav-list {
+  padding: 0;
+}
+
+mat-list-item {
+  white-space: normal; /* Разрешаем перенос текста на новую строку */
+  word-wrap: break-word; /* Переносим текст в случае необходимости */
+}
+
+a {
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  color: #1a73e8; /* Цвет ссылок, вы можете изменить его на свой вкус */
+}
+
+a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+pre, code {
+  font-size: 1.1em; /* Увеличение размера шрифта для кода */
+  line-height: 1.6; /* Увеличение межстрочного расстояния для лучшей читаемости */
+}
+
+pre {
+  padding: 10px;
+  background-color: #f5f5f5; /* Легкий серый фон для выделения кода */
+  border-radius: 5px; /* Скругленные углы для эстетики */
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace; /* Шрифт для кода */
+}
+
+
+/* Основной контейнер для всего контента */
+app-root {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение хедера сверху */
+  height: 100vh; /* 100% высоты окна браузера */
+}
+
+header {
+  flex-shrink: 0; /* Хедер не сжимается */
+  z-index: 1000;
+  width: 100%;
+}
+
+.container {
+  display: flex; /* Контейнер для меню и контента */
+  flex-grow: 1; /* Занимает все оставшееся пространство после хедера */
+  overflow: hidden; /* Ограничиваем прокрутку */
+}
+
+.menu {
+
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto; /* Только контент прокручивается */
+  padding: 0px;
+}

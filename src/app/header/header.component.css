@@ -1,0 +1,54 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+  min-height: 64px;
+}
+
+.youtube-link {
+  display: flex;
+  align-items: center;
+}
+
+.youtube-logo {
+  height: 24px;
+  width: 24px;
+  margin-left: 16px;
+}
+
+/* Если нужно настроить цвет фона */
+.mat-toolbar.mat-primary {
+  background-color: #d7e3ff; /* Цвет, похожий на сайт Angular Material */
+  color: #1e6dc0;
+}
+
+/* Чтобы добавить легкое скругление краев */
+
+
+.toolbar span {
+  font-weight: bold;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center; /* Выровнять все элементы по центру вертикально */
+}
+
+.java-logo {
+  height: 32px; /* Вы можете настроить высоту, чтобы она соответствовала вашему дизайну */
+  margin-right: 8px; /* Отступ справа от изображения */
+  vertical-align: middle; /* Дополнительное выравнивание изображения с текстом */
+}
+
+.youtube-link {
+  margin-left: auto; /* Сдвигает YouTube ссылку вправо */
+}
+
+.youtube-logo {
+  height: 24px;
+  width: 24px;
+}
+
+
+

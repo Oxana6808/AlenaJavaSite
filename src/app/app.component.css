@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  height: calc(100vh - 64px); /* Учитываем высоту хедера */
+  flex-shrink: 0; /* Предотвращает сжатие контейнера */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Добавляем вертикальную прокрутку только для бокового меню */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  min-height: 0; /* Гарантирует, что контент не выйдет за пределы контейнера */
+}
+
+
+
