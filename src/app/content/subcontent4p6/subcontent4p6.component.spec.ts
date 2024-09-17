@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { Subcontent4p6Component } from './subcontent4p6.component';
+
+describe('Subcontent4p6Component', () => {
+  let component: Subcontent4p6Component;
+  let fixture: ComponentFixture<Subcontent4p6Component>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [Subcontent4p6Component]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(Subcontent4p6Component);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
