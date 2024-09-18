@@ -14,9 +14,7 @@
 
 .content {
   flex-grow: 1;
-  padding: 20px;
-  min-height: 0; /* Гарантирует, что контент не выйдет за пределы контейнера */
+  margin: 0 auto;
 }
-
 
 

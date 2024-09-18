@@ -39,6 +39,7 @@ pre {
   padding: 10px;
   background-color: #f5f5f5; /* Легкий серый фон для выделения кода */
   border-radius: 5px; /* Скругленные углы для эстетики */
+  overflow-x: auto; /* Добавляет горизонтальную прокрутку, если нужно */
 }
 
 code {
@@ -72,5 +73,13 @@ header {
 .content {
   flex-grow: 1;
   overflow-y: auto; /* Только контент прокручивается */
-  padding: 0px;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .content {
+    width: 100%; /* Контент расширяется */
+  }
 }

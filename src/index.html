@@ -1,15 +1,41 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Study Java</title>
-  <base href="/">
+  <meta charset="utf-8"> <!-- Устанавливаем кодировку символов страницы -->
+  <title>Study Java</title> <!-- Заголовок страницы, который отображается на вкладке браузера -->
+  <base href="/"> <!-- Базовый URL для всех относительных ссылок на этой странице -->
+
+  <!-- Устанавливаем настройки для корректного отображения на мобильных устройствах -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Подключаем иконку для сайта (favicon) -->
   <link rel="icon" type="image/x-icon" href="javaLogo.ico">
+
+  <!-- Подключаем шрифты Roboto с разной толщиной (300, 400, 500) -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Подключаем иконки Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+
+  <!-- Подключаем стили Prism.js для подсветки синтаксиса -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+
+  <!-- Подключаем стили для отображения номеров строк в Prism.js -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
+
 </head>
 <body>
+
+<!-- Основной контейнер для Angular-приложения -->
   <app-root></app-root>
+
+<!-- Подключаем скрипт Prism.js для подсветки синтаксиса -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+
+<!-- Подключаем плагин Prism.js для отображения номеров строк -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
 </body>
 </html>
