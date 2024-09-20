@@ -40,10 +40,16 @@ pre {
   background-color: #f5f5f5; /* Легкий серый фон для выделения кода */
   border-radius: 5px; /* Скругленные углы для эстетики */
   overflow-x: auto; /* Добавляет горизонтальную прокрутку, если нужно */
+  font-family: Consolas, monospace;
+  font-size: 15px;
+  color: black;
 }
 
 code {
-  font-family: 'Courier New', Courier, monospace; /* Шрифт для кода */
+  font-family: Consolas, monospace; /* Шрифт для кода */
+  background-color: #f4f4f4; /* Светло-серый фон */
+  border-radius: 4px; /* Закругленные края */
+  padding: 2px 4px;
 }
 
 
@@ -82,4 +88,43 @@ header {
   .content {
     width: 100%; /* Контент расширяется */
   }
+}
+
+
+/*
+очень важные стили для кодов
+*/
+pre[class*="language-"], code[class*="language-"] {
+  background-color: #f4f4f4; /* светло-серый цвет */
+  color: #3c3c85; /* основной цвет */
+}
+
+.token.comment {
+  color: #158a16; /* серый цвет для комментариев */
+}
+.token.number {
+  color: rgba(21, 138, 22, 0.63); /* зелёный цвет для цифр */
+}
+.token.keyword {
+  color: #006698; /* синий цвет для ключевых слов */
+}
+
+.token.string {
+  color: #da003e; /* зелёный цвет для строк */
+}
+
+.token.class-name {
+  color: #141b1e; /* фиолетовый для классов */
+}
+
+.token.function {
+  color: rgba(0, 102, 151, 0.53); /* оранжевый для функций */
+}
+
+.token.operator, .token.punctuation {
+  color: #141b1e; /* более темный цвет для скобок и операторов */
+}
+
+.token.constant{
+  color: #24b3c0;
 }

@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit  } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
+import Prism from 'prismjs';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,10 @@ import { ContentComponent } from './content/content.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit{
   title = 'AlenaJavaSite';  // Добавляем title, если нужно
+  
+  ngAfterViewInit() {
+    Prism.highlightAll(); // Инициализация Prism.js для подсветки
+  }
 }

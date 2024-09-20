@@ -3,6 +3,10 @@ import { AppComponent } from './app/app.component';
 import { provideRouter } from '@angular/router';
 import { routes } from './app/app.routes';  // Указываем правильное имя файла
 import { appConfig } from './app/app.config';  // Импортируем конфигурацию приложения
+import 'prismjs';
+import 'prismjs/components/prism-java.min.js';
+import 'prismjs/plugins/line-numbers/prism-line-numbers.min.js';
+
 
 bootstrapApplication(AppComponent, {
   ...appConfig,  // Разворачиваем конфигурацию из appConfig
