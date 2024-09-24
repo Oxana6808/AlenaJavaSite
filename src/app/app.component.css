@@ -2,7 +2,6 @@
   display: flex;
   height: calc(100vh - 64px); /* Учитываем высоту хедера */
   flex-shrink: 0; /* Предотвращает сжатие контейнера */
-  overflow: auto;
 }
 
 .sidebar {
@@ -11,10 +10,12 @@
   padding: 10px;
   box-sizing: border-box;
   overflow-y: auto; /* Добавляем вертикальную прокрутку только для бокового меню */
+
 }
 
 .content {
   flex-grow: 1;
   margin: 0 auto;
 }
+
 
