@@ -2,6 +2,7 @@
   display: flex;
   height: calc(100vh - 64px); /* Учитываем высоту хедера */
   flex-shrink: 0; /* Предотвращает сжатие контейнера */
+  overflow: auto;
 }
 
 .sidebar {
@@ -16,5 +17,4 @@
   flex-grow: 1;
   margin: 0 auto;
 }
-
 

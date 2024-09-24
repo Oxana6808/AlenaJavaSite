@@ -18,9 +18,12 @@ import Prism from 'prismjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit{
+
   title = 'AlenaJavaSite';  // Добавляем title, если нужно
-  
+
   ngAfterViewInit() {
     Prism.highlightAll(); // Инициализация Prism.js для подсветки
   }
+
+
 }

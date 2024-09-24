@@ -96,21 +96,21 @@ header {
 */
 pre[class*="language-"], code[class*="language-"] {
   background-color: #f4f4f4; /* светло-серый цвет */
-  color: #3c3c85; /* основной цвет */
+  color: #036abe; /* основной цвет */
 }
 
 .token.comment {
-  color: #158a16; /* серый цвет для комментариев */
+  color: #989898; /* серый цвет для комментариев */
 }
 .token.number {
   color: rgba(21, 138, 22, 0.63); /* зелёный цвет для цифр */
 }
 .token.keyword {
-  color: #006698; /* синий цвет для ключевых слов */
+  color: #d85091; /* синий цвет для ключевых слов */
 }
 
 .token.string {
-  color: #da003e; /* зелёный цвет для строк */
+  color: #1dbe5d; /* зелёный цвет для строк */
 }
 
 .token.class-name {
@@ -118,7 +118,7 @@ pre[class*="language-"], code[class*="language-"] {
 }
 
 .token.function {
-  color: rgba(0, 102, 151, 0.53); /* оранжевый для функций */
+  color: #036abe; /* оранжевый для функций */
 }
 
 .token.operator, .token.punctuation {
@@ -128,3 +128,4 @@ pre[class*="language-"], code[class*="language-"] {
 .token.constant{
   color: #24b3c0;
 }
+
