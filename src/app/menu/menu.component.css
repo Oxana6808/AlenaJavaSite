@@ -48,7 +48,7 @@ mat-list-item {
 
 /* Подсветка активного элемента */
 .menu a.active {
-  background-color: #afc3dd; /* Голубой фон для активного элемента */
+
   color: #d5e2f3; /* Синий цвет текста для активного элемента */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Небольшая тень для выделения */
 }
@@ -102,14 +102,6 @@ mat-list-item {
 }
 
 
-
-
-/* Настройка скругленного серого ползунка с тонкой полосой */
-.custom-scrollbar {
-  scrollbar-width: thin; /* Для Firefox */
-  scrollbar-color: #888 transparent; /* Цвет ползунка и прозрачного трека в Firefox */
-}
-
 .custom-scrollbar::-webkit-scrollbar {
   width: 3px; /* Ширина ползунка */
 }
@@ -134,7 +126,7 @@ mat-list-item {
 /* Для Firefox */
 .custom-scrollbar {
   scrollbar-width: thin; /* Тонкий ползунок в Firefox */
-  scrollbar-color: #888 transparent; /* Цвет ползунка и трека */
+  scrollbar-color: #cccccc transparent; /* Цвет ползунка и трека */
 }
 
 /* Применение аналогичных стилей для других браузеров, таких как Edge */
