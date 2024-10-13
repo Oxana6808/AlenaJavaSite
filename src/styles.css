@@ -131,3 +131,22 @@ pre[class*="language-"], code[class*="language-"] {
   color: #d7a611;
 }
 
+/* styles.css */
+
+.video-container {
+  max-width: 500px; /* Максимальная ширина контейнера */
+  background-position: center; /* Центрирование фона, если нужно */
+  margin: 0; /* Убираем внешние отступы */
+  height: 300px; /* Фиксированная высота */
+  position: relative; /* Позволяет использовать абсолютное позиционирование для iframe */
+  overflow: hidden; /* Скрывает части, выходящие за пределы контейнера */
+  border-radius: 15px; /* Скругленные углы */
+}
+
+.video-container iframe {
+  width: 100%; /* Ширина iframe 100% от родителя */
+  height: 100%; /* Высота iframe 100% от родителя */
+  border: none; /* Убираем рамку */
+  border-radius: 15px; /* Скругленные углы */
+}
+
