@@ -3,12 +3,15 @@ import { RouterOutlet } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
+import { MatMenuModule } from '@angular/material/menu';
+
 import Prism from 'prismjs';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
+    MatMenuModule,  // Добавляем MatMenuModule в массив imports
     RouterOutlet,      // Подключаем RouterOutlet для маршрутизации
     HeaderComponent,   // Подключаем standalone-компоненты
     MenuComponent,

@@ -123,6 +123,8 @@ pre[class*="language-"], code[class*="language-"] {
 
 .token.operator, .token.punctuation {
   color: #141b1e; /* более темный цвет для скобок и операторов */
+  background-color: transparent; /* Прозрачный фон */
+
 }
 
 .token.constant{

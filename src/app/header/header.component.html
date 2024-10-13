@@ -1,6 +1,22 @@
 <mat-toolbar color="primary" class="toolbar">
+
+  <!-- Кнопка для мобильного меню -->
+  <button mat-icon-button class="menu-toggle" (click)="sidenav.toggle()" >
+<!--  <button mat-button class="menu-button" (click)="sidenav.toggle()">-->
+<!--    <mat-icon>{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>-->
+    <mat-icon>menu</mat-icon>
+  </button>
+
   <img src="JavaBigLogo.png" class="java-logo" alt="JavaLogo">
   <span>Занятия по Java</span>
+
+  <!-- Меню, которое будет открываться -->
+ <mat-sidenav-container> <!-- class="sidenav-container" -->
+    <mat-sidenav id="toggle" (click)="toggleSidebar()" > <!--  #sidenav mode="over" [(opened)]="isMenuOpen" class="sidenav" (click)="onSidenavClick()"-->
+      <app-menu></app-menu>
+    </mat-sidenav>
+  </mat-sidenav-container>
+
   <a href="https://www.youtube.com/@AlyonaAbramova" target="_blank" class="youtube-link">
     <img src="YouTube.png" class="youtube-logo" alt="YouTube" >
   </a>

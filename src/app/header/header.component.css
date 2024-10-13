@@ -33,12 +33,14 @@
 .toolbar {
   display: flex;
   align-items: center; /* Выровнять все элементы по центру вертикально */
+
 }
 
 .java-logo {
   height: 32px; /* Вы можете настроить высоту, чтобы она соответствовала вашему дизайну */
   margin-right: 8px; /* Отступ справа от изображения */
   vertical-align: middle; /* Дополнительное выравнивание изображения с текстом */
+  margin-left: 8px; /* Отступ справа от изображения */
 }
 
 .youtube-link {
@@ -48,6 +50,94 @@
 .youtube-logo {
   height: 24px;
   width: 24px;
+}
+
+@media screen and (min-width: 769px) {
+  .youtube-link {
+    margin-left: auto; /* Сдвигает ссылку на правую сторону */
+  }
+
+  /* Показываем сайдбар только на больших экранах */
+  .mat-sidenav-container {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+
+/* Показываем кнопку на мобильных экранах */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+
+  }
+
+  .mat-sidenav {
+    transform: none !important;
+    visibility: visible !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+  }
+
+  .mat-sidenav-container {
+    display: block;
+  }
+}
+
+button.mat-icon-button {
+  position: absolute;
+  top: 20px; /* Adjust to place it correctly */
+  left: 10px;
+  z-index: 1000;
+  border-radius: 50%; /* Circular button */
+  box-shadow: none; /* Removes the shadow */
+  border: none; /* Removes the border */
+  background-color: #d6e2fe; /* Button background */
+}
+
+button.menu-toggle {
+  background-color: #d6e2fe;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: none; /* Убирает обводку */
+  box-shadow: none; /* Убирает тень */
+  cursor: pointer; /* Меняем курсор на "ручку" */
+}
+
+button.menu-toggle:hover {
+  background-color: #c0d4f7; /* Цвет кнопки при наведении */
+}
+
+.mat-icon {
+  color: #4663a5; /* Changes the color of the lines to blue */
+}
+
+.mat-sidenav {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 100vh; /* Меню на весь экран */
+}
+
+.menu-toggle {
+  z-index: 1000;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .sidenav-container {
+    display: block;
+  }
 }
 
 

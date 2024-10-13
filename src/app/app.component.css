@@ -18,4 +18,8 @@
   margin: 0 auto;
 }
 
+html, body {
+  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+}
+
 
