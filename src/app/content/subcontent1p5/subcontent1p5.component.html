@@ -1,1 +1,24 @@
   <h2 id="section1-5">1-5 Вводим с клавиатуры имя и выводим на консоль "Hello, name!"</h2>
+
+  <p>Программа запрашивает имя пользователя и выводит приветствие с этим именем.</p>
+
+  <h3>Пример кода:</h3>
+  <pre class="line-numbers"><code class="language-java">import java.util.Scanner;
+
+public class InputExample &#123;
+    public static void main(String[] args) &#123;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите ваше имя: ");
+        String name = scanner.nextLine();
+        System.out.println("Привет, " + name + "!");
+    &#125;
+&#125;</code></pre>
+
+  <p>Вывод программы:</p>
+  <pre><code>Введите ваше имя: Алёна
+Привет, Алёна!</code></pre>
+
+  <h2>Смотрите видео ниже:</h2>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/N8cK-lxUROY?start=0" allowfullscreen></iframe>
+  </div>
