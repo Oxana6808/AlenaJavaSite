@@ -1,1 +1,41 @@
-  <h2 id="section2-6">2-6 Задача на сколько денег нужно на покупку 4 товаров по разным ценам</h2>
+<h2 id="section2-6">2-6 Задача на подсчет стоимости покупки 4 товаров по разным ценам</h2>
+<p>Эта программа вычисляет общую стоимость покупки 4 товаров с разными ценами и рассчитывает сдачу на основании суммы, полученной от покупателя. Мы будем использовать простые целые числа для удобных вычислений.</p>
+
+<h3>Пример кода:</h3>
+<pre class="line-numbers"><code class="language-java">import java.util.Scanner;
+
+public class ShoppingCostExample &#123;
+    public static void main(String[] args) &#123;
+        // Цены на товары (в целых числах)
+        int item1Price = 5;  // 5 рублей
+        int item2Price = 3;  // 3 рубля 
+        int item3Price = 2;  // 2 рубля
+        int item4Price = 10; // 10 рублей
+
+        // Общая стоимость покупки
+        int total = item1Price + item2Price + item3Price + item4Price;
+
+        // Ввод суммы, переданной покупателем
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите сумму, полученную от покупателя (в рублях): ");
+        int amountReceived = scanner.nextInt();
+
+        // Расчет сдачи
+        int change = amountReceived - total;
+
+        // Вывод итоговой информации
+        System.out.println("Сумма покупки: " + total + " рублей");
+        System.out.println("Получено от покупателя: " + amountReceived + " рублей");
+        System.out.println("Сдача: " + change + " рублей");
+    &#125;
+&#125;</code></pre>
+
+<p>Вывод программы:</p>
+<pre><code>Сумма покупки: 20 рублей
+Получено от покупателя: 50 рублей
+Сдача: 30 рублей</code></pre>
+
+<h2>Смотрите видео ниже:</h2>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/N8cK-lxUROY?start=0" allowfullscreen></iframe>
+</div>

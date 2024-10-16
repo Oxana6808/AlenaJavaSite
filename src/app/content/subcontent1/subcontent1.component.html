@@ -1,25 +1,19 @@
 
   <!-- Раздел с id section1 -->
-  <h2 id="section1">1 Вывод на консоль</h2>
-  <p>В Java для вывода текста на консоль используются функции <code>print</code> и <code>println</code>. <code>println</code> добавляет символ новой строки после вывода текста, тогда как <code>print</code> - нет. Это означает, что вывод, следующий за <code>println</code>, начнется с новой строки, в то время как вывод после <code>print</code> продолжится на той же строке.</p>
+  <h2 id="section1">1 Вывод на консоль print</h2>
+  <p>В Java для вывода текста на консоль используется функция <code>print</code>. В отличие от <code>println</code>, метод <code>print</code> не добавляет символ новой строки. Это означает, что следующий вывод продолжается на той же строке.</p>
 
-  <h3>Пример ввода и вывода:</h3>
-  <pre class="line-numbers"><code class="language-java">// Пример использования функций print и println
-public class PrintExample &#123;
-    // Декларируем главный метод main
+  <h3>Пример кода:</h3>
+  <pre class="line-numbers"><code class="language-java">public class PrintExample &#123;
     public static void main(String[] args) &#123;
         System.out.print("Hello");
         System.out.print(", ");
-        System.out.print("World");
-        System.out.println("!");
-        System.out.println("Это новая строка.");
+        System.out.print("World!");
     &#125;
 &#125;</code></pre>
 
-  <p>В результате выполнения этой программы на консоль будет выведено:</p>
-  <pre><code>Hello, World!
-Это новая строка.</code></pre>
-
+  <p>Вывод программы:</p>
+  <pre><code>Hello, World!</code></pre>
 
   <!-- Блок для видео с YouTube -->
   <h2>Смотрите видео ниже:</h2>

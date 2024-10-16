@@ -2,6 +2,7 @@
   <h2 id="section1-3">1-3 Выводим красным цветом "Hello, " и синим "world!"</h2>
 
   <p>Для подсвечивания цвета слов, фона разными цветами, жирного шрифта и сброса есть ANSI-коды:</p>
+  <p>Для вывода текста с цветами в консоли можно использовать ANSI-коды.</p>
   <h4>Цвета текста:</h4>
   <ul>
     <li><span style="color: red;">красный</span> - <code>"\u001B[31m"</code></li>
@@ -21,23 +22,22 @@
     <li>жирный шрифт - <code>"\u001B[1m"</code></li>
   </ul>
 
-  <h3>Написать программу, которая выводит на консоль красным цветом "Hello, " и синим "world!":</h3>
-  <pre class="line-numbers"><code class="language-java">// Пример использования ANSI-кодов для цветного вывода
-public class ColorExample &#123;
-    public static void main(String[] args) &#123;
-        // ANSI-код для сброса цвета
-        final String RESET = "\u001B[0m";
-        // ANSI-коды для цветов
-        final String RED = "\u001B[31m";
-        final String BLUE = "\u001B[34m";
 
-        // Вывод текста с использованием цветов
-        System.out.print(RED + "Hello, " + RESET);
-        System.out.print(BLUE + "world!" + RESET);
+  <h3>Пример кода:</h3>
+  <pre class="line-numbers"><code class="language-java">public class ColorPrintExample &#123;
+    public static final String RED = "\u001B[31m";
+    public static final String BLUE = "\u001B[34m";
+    public static final String RESET = "\u001B[0m";
+
+    public static void main(String[] args) &#123;
+        System.out.println(RED + "Hello" + RESET + " " + BLUE + "World!" + RESET);
     &#125;
 &#125;</code></pre>
-  <p>В результате выполнения этой программы на консоль будет выведено:</p>
-  <pre><code><span style="color: red;">Hello, </span><span style="color: blue;">world!</span></code></pre>
+
+  <p>Вывод программы (в консоли):</p>
+  <pre><code>Hello (красным) World! (синим)</code></pre>
+
+
   <h3>Задания для самостоятельной работы:</h3>
   <ul>
     <li>Написать красным <span style="color: red;">"Я изучаю язык программирования - Java!"</span></li>
@@ -46,6 +46,8 @@ public class ColorExample &#123;
     <li>Написать на синем фоне <span style="background-color: blue;">"Java основан 23 мая 1995г. Джеймсом Гослингом в компании Sun Microsystems."</span></li>
     <li>Написать на желтом фоне красным цветом <span style="color: red; background-color: yellow;"> Oracle выкупила права на Java."</span></li>
   </ul>
+
+
 
   <!-- Блок для видео с YouTube -->
   <h2>Смотрите видео ниже:</h2>
