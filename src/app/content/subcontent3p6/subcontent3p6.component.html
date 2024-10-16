@@ -1,1 +1,31 @@
-<h2 id="section3-6">3-6 Используем else if для разных условий</h2>
+
+<h2 id="section3-6">3-6 Выводим используя else if</h2>
+<p>Программа проверяет, какие задачи были выполнены, и выводит соответствующие сообщения. Если ни одна задача не выполнена, программа выводит "учимся".</p>
+
+<h3>Пример кода:</h3>
+<pre class="line-numbers"><code class="language-java">public class TasksExample &#123;
+    public static void main(String[] args) &#123;
+        boolean didSchulte = false;
+        boolean didProgramming = true;
+        boolean didShowEnglish = false;
+        boolean didCounting = false;
+        boolean didReading = false;
+
+        if (didSchulte) &#123;
+            System.out.println("Сделала шульте");
+        &#125; else if (didProgramming) &#123;
+            System.out.println("Сделала программирование");
+        &#125; else if (didShowEnglish) &#123;
+            System.out.println("Сделала шоу инглиш");
+        &#125; else if (didCounting) &#123;
+            System.out.println("Сделала счет");
+        &#125; else if (didReading) &#123;
+            System.out.println("Почитала");
+        &#125; else &#123;
+            System.out.println("Учимся");
+        &#125;
+    &#125;
+&#125;</code></pre>
+
+<p>Вывод программы:</p>
+<pre><code>Сделала программирование</code></pre>

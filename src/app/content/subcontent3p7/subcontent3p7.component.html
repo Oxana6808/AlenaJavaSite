@@ -1,2 +1,26 @@
 
-<h2 id="section3-7">3-7 Используем switch case для перехода дороги</h2>
+
+<h2 id="section3-7">3-7 Используем конструкцию switch case при переходе дороги</h2>
+<p>Программа использует оператор <code>switch case</code> для описания действий при разных сигналах светофора.</p>
+
+<h3>Пример кода:</h3>
+<pre class="line-numbers"><code class="language-java">public class TrafficLightExample &#123;
+    public static void main(String[] args) &#123;
+        String light = "красный";
+
+        switch (light) &#123;
+            case "красный":
+                System.out.println("Стоим");
+                break;
+            case "зеленый":
+                System.out.println("Идем");
+                break;
+            default:
+                System.out.println("Ждем");
+                break;
+        &#125;
+    &#125;
+&#125;</code></pre>
+
+<p>Вывод программы:</p>
+<pre><code>Стоим</code></pre>

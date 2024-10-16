@@ -1,1 +1,23 @@
-<h2 id="section3-3">3-3 Выводим большее число из 3</h2>
+
+<h2 id="section3-3">3-3 Выводим большее из 3</h2>
+<p>В этой задаче мы определим наибольшее число из трех введенных чисел.</p>
+
+<h3>Пример кода:</h3>
+<pre class="line-numbers"><code class="language-java">public class MaxOfThreeExample &#123;
+    public static void main(String[] args) &#123;
+        int a = 5;
+        int b = 12;
+        int c = 9;
+
+        if (a >= b && a >= c) &#123;
+            System.out.println("Наибольшее число: " + a);
+        &#125; else if (b >= a && b >= c) &#123;
+            System.out.println("Наибольшее число: " + b);
+        &#125; else &#123;
+            System.out.println("Наибольшее число: " + c);
+        &#125;
+    &#125;
+&#125;</code></pre>
+
+<p>Вывод программы:</p>
+<pre><code>Наибольшее число: 12</code></pre>
