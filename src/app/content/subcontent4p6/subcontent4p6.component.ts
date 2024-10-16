@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import Prism from 'prismjs';
 
 @Component({
   selector: 'app-subcontent4p6',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
   templateUrl: './subcontent4p6.component.html',
   styleUrl: './subcontent4p6.component.css'
 })
-export class Subcontent4p6Component {
-
+export class Subcontent4p6Component implements AfterViewInit{
+  ngAfterViewInit() {
+    Prism.highlightAll();  // Подсветка кода после загрузки
+  }
 }
