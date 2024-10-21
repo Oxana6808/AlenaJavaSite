@@ -1,44 +1,7 @@
 <!-- Раздел с id section1 -->
 <h2 id="section1">Command Line. Методы ввода и вывода.</h2>
 
-
-<h3>1. Пять этапов компиляции программы на java. </h3>
-
-<!-- Вставляем изображение с этапами компиляции -->
-<img src="Этапы компиляции.jpg" alt="Этапы компиляции программы на Java" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 5px;">
-
-
-<p><b>Написание исходного кода (HelloWorld.java): </b>Программист пишет исходный код программы на языке Java и сохраняет его в файле с расширением .java. Например, это файл <code>HelloWorld.java</code>. </p>
-<pre class="line-numbers"><code class="language-java">// HelloWorld.java, название файла совдает с именем класса
-public class HelloWorld &#123;
-    public static void main(String[] args) &#123;
-        System.out.println("Hello, World!");
-    &#125;
-&#125;</code></pre>
-
-<p><b>Компиляция исходного кода (Java Compiler): </b> Компилятор Java (<code>javac</code>) компилирует исходный код из файла <code>HelloWorld.java</code> в байт-код. Байт-код — это промежуточный машинный код, который понимает Java Virtual Machine (JVM). Компилятор проверяет код на синтаксические ошибки и преобразует его в файл с расширением <code>.class</code>. Этот этап переводит код с высокоуровневого языка в машинный язык, который не зависит от конкретной платформы.</p>
-
-<pre class="line-numbers"><code class="language-bash">javac HelloWorld.java</code></pre>
-<p>Если компиляция прошла успешно, создается файл <code>HelloWorld.class</code> без вывода ошибок.</p>
-
-<p><b>Создание байт-кода (HelloWorld.class): </b>После успешной компиляции создается файл с расширением <code>.class</code>, который содержит байт-код программы. Например, это файл <code>HelloWorld.class</code>. Байт-код представляет собой набор инструкций, которые могут быть выполнены на любой платформе, где установлена JVM. Этот этап также включает проверку корректности байт-кода на предмет ошибок или потенциальных угроз безопасности.</p>
-<pre class="line-numbers"><code class="language-bash">javap HelloWorld.class</code></pre>
-<p>Пример вывода байт-кода:</p>
-<pre class="console-output"><code>Compiled from "HelloWorld.java"
-public class HelloWorld &#123;
-  public HelloWorld();
-  public static void main(java.lang.String[]);
-&#125;
-</code></pre>
-
-<p><b>Выполнение байт-кода на JVM (Java Virtual Machine): </b>Виртуальная машина Java (JVM) загружает и выполняет байт-код из файла <code>.class</code>. JVM интерпретирует байт-код или компилирует его в машинный код для конкретного устройства (с помощью JIT-компиляции — Just-In-Time). JVM является кросс-платформенной и может работать на любой операционной системе, для которой существует реализация JVM.</p>
-<pre class="line-numbers"><code class="language-bash">java HelloWorld</code></pre>
-
-<p><b>Запуск программы (Program Execution): </b>после того как JVM интерпретирует или компилирует байт-код в машинный код, программа запускается на конкретном компьютере. Пользователь видит результаты работы программы, например вывод в консоль или интерфейс графического приложения. На этом этапе программа выполняет логику, которая была заложена разработчиком в исходный код.</p>
-<p>Вывод программы:</p>
-<pre class="console-output"><code>Hello, World!</code></pre>
-
-<h3>2. Консоль(command line) и её виды</h3>
+<h3>1. Консоль(command line) и её виды</h3>
 <p>Консоль — это программа, которая позволяет показывать текстовые сообщения и принимать текст от пользователя. С помощью консоли можно управлять программами и давать им команды, например, вводить данные или получать ответы.</p>
 <p>Виды консолей:</p>
 <ul>
@@ -53,7 +16,7 @@ public class HelloWorld &#123;
 <p><b>Встроенные консоли в IDE</b> — большинство современных сред разработки, таких как IntelliJ IDEA, имеют встроенную консоль, которая позволяет запускать программы и выводить результаты прямо в интерфейсе IDE.</p>
 <img src="JLoveJava.jpg" alt="Консольный вывод" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 5px;">
 
-<h3>3. Методы ввода и вывода</h3>
+<h3>2. Методы ввода и вывода</h3>
 <p>Для вывода данных мы используем несколько методов:</p>
 <ul>
   <li><code>print()</code> — выводит данные в консоль без перехода на новую строку.</li>
@@ -92,6 +55,43 @@ String name = scanner.nextLine();</code></pre>
 
 <pre class="console-output"><code>Введите ваше имя: Алёна
 Привет, Алёна!</code></pre>
+
+
+<h3>3. Пять этапов компиляции программы на java. </h3>
+
+<!-- Вставляем изображение с этапами компиляции -->
+<img src="Этапы компиляции.jpg" alt="Этапы компиляции программы на Java" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 5px;">
+
+
+<p><b>Написание исходного кода (HelloWorld.java): </b>Программист пишет исходный код программы на языке Java и сохраняет его в файле с расширением .java. Например, это файл <code>HelloWorld.java</code>. </p>
+<pre class="line-numbers"><code class="language-java">// HelloWorld.java, название файла совдает с именем класса
+public class HelloWorld &#123;
+    public static void main(String[] args) &#123;
+        System.out.println("Hello, World!");
+    &#125;
+&#125;</code></pre>
+
+<p><b>Компиляция исходного кода (Java Compiler): </b> Компилятор Java (<code>javac</code>) компилирует исходный код из файла <code>HelloWorld.java</code> в байт-код. Байт-код — это промежуточный машинный код, который понимает Java Virtual Machine (JVM). Компилятор проверяет код на синтаксические ошибки и преобразует его в файл с расширением <code>.class</code>. Этот этап переводит код с высокоуровневого языка в машинный язык, который не зависит от конкретной платформы.</p>
+
+<pre class="line-numbers"><code class="language-bash">javac HelloWorld.java</code></pre>
+<p>Если компиляция прошла успешно, создается файл <code>HelloWorld.class</code> без вывода ошибок.</p>
+
+<p><b>Создание байт-кода (HelloWorld.class): </b>После успешной компиляции создается файл с расширением <code>.class</code>, который содержит байт-код программы. Например, это файл <code>HelloWorld.class</code>. Байт-код представляет собой набор инструкций, которые могут быть выполнены на любой платформе, где установлена JVM. Этот этап также включает проверку корректности байт-кода на предмет ошибок или потенциальных угроз безопасности.</p>
+<pre class="line-numbers"><code class="language-bash">javap HelloWorld.class</code></pre>
+<p>Пример вывода байт-кода:</p>
+<pre class="console-output"><code>Compiled from "HelloWorld.java"
+public class HelloWorld &#123;
+  public HelloWorld();
+  public static void main(java.lang.String[]);
+&#125;
+</code></pre>
+
+<p><b>Выполнение байт-кода на JVM (Java Virtual Machine): </b>Виртуальная машина Java (JVM) загружает и выполняет байт-код из файла <code>.class</code>. JVM интерпретирует байт-код или компилирует его в машинный код для конкретного устройства (с помощью JIT-компиляции — Just-In-Time). JVM является кросс-платформенной и может работать на любой операционной системе, для которой существует реализация JVM.</p>
+<pre class="line-numbers"><code class="language-bash">java HelloWorld</code></pre>
+
+<p><b>Запуск программы (Program Execution): </b>после того как JVM интерпретирует или компилирует байт-код в машинный код, программа запускается на конкретном компьютере. Пользователь видит результаты работы программы, например вывод в консоль или интерфейс графического приложения. На этом этапе программа выполняет логику, которая была заложена разработчиком в исходный код.</p>
+<p>Вывод программы:</p>
+<pre class="console-output"><code>Hello, World!</code></pre>
 
 
 <h2>4. Какие известные программы написаны на Java:</h2>
