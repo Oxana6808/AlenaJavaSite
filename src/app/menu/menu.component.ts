@@ -36,4 +36,6 @@ export class MenuComponent {
     console.log('Navigating to:', route);
     this.router.navigate([route]);  // Навигация по маршруту
   }
+
+  
 }

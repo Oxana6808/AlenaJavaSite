@@ -1,25 +1,116 @@
+<!-- Раздел с id section1 -->
+<h2 id="section1">Command Line. Методы ввода и вывода.</h2>
 
-  <!-- Раздел с id section1 -->
-  <h2 id="section1">1 Вывод на консоль print</h2>
-  <p>В Java для вывода текста на консоль используется функция <code>print</code>. В отличие от <code>println</code>, метод <code>print</code> не добавляет символ новой строки. Это означает, что следующий вывод продолжается на той же строке.</p>
 
-  <h3>Пример кода:</h3>
-  <pre class="line-numbers"><code class="language-java">public class PrintExample &#123;
+<h3>1. Пять этапов компиляции программы на java. </h3>
+
+<!-- Вставляем изображение с этапами компиляции -->
+<img src="Этапы компиляции.jpg" alt="Этапы компиляции программы на Java" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 5px;">
+
+
+<p><b>Написание исходного кода (HelloWorld.java): </b>Программист пишет исходный код программы на языке Java и сохраняет его в файле с расширением .java. Например, это файл <code>HelloWorld.java</code>. </p>
+<pre class="line-numbers"><code class="language-java">// HelloWorld.java, название файла совдает с именем класса
+public class HelloWorld &#123;
     public static void main(String[] args) &#123;
-        System.out.print("Hello");
-        System.out.print(", ");
-        System.out.print("World!");
+        System.out.println("Hello, World!");
     &#125;
 &#125;</code></pre>
 
-  <p>Вывод программы:</p>
-  <pre><code>Hello, World!</code></pre>
+<p><b>Компиляция исходного кода (Java Compiler): </b> Компилятор Java (<code>javac</code>) компилирует исходный код из файла <code>HelloWorld.java</code> в байт-код. Байт-код — это промежуточный машинный код, который понимает Java Virtual Machine (JVM). Компилятор проверяет код на синтаксические ошибки и преобразует его в файл с расширением <code>.class</code>. Этот этап переводит код с высокоуровневого языка в машинный язык, который не зависит от конкретной платформы.</p>
 
-  <!-- Блок для видео с YouTube -->
-  <h2>Смотрите видео ниже:</h2>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/N8cK-lxUROY?start=0" allowfullscreen></iframe>
-  </div>
+<pre class="line-numbers"><code class="language-bash">javac HelloWorld.java</code></pre>
+<p>Если компиляция прошла успешно, создается файл <code>HelloWorld.class</code> без вывода ошибок.</p>
+
+<p><b>Создание байт-кода (HelloWorld.class): </b>После успешной компиляции создается файл с расширением <code>.class</code>, который содержит байт-код программы. Например, это файл <code>HelloWorld.class</code>. Байт-код представляет собой набор инструкций, которые могут быть выполнены на любой платформе, где установлена JVM. Этот этап также включает проверку корректности байт-кода на предмет ошибок или потенциальных угроз безопасности.</p>
+<pre class="line-numbers"><code class="language-bash">javap HelloWorld.class</code></pre>
+<p>Пример вывода байт-кода:</p>
+<pre class="console-output"><code>Compiled from "HelloWorld.java"
+public class HelloWorld &#123;
+  public HelloWorld();
+  public static void main(java.lang.String[]);
+&#125;
+</code></pre>
+
+<p><b>Выполнение байт-кода на JVM (Java Virtual Machine): </b>Виртуальная машина Java (JVM) загружает и выполняет байт-код из файла <code>.class</code>. JVM интерпретирует байт-код или компилирует его в машинный код для конкретного устройства (с помощью JIT-компиляции — Just-In-Time). JVM является кросс-платформенной и может работать на любой операционной системе, для которой существует реализация JVM.</p>
+<pre class="line-numbers"><code class="language-bash">java HelloWorld</code></pre>
+
+<p><b>Запуск программы (Program Execution): </b>после того как JVM интерпретирует или компилирует байт-код в машинный код, программа запускается на конкретном компьютере. Пользователь видит результаты работы программы, например вывод в консоль или интерфейс графического приложения. На этом этапе программа выполняет логику, которая была заложена разработчиком в исходный код.</p>
+<p>Вывод программы:</p>
+<pre class="console-output"><code>Hello, World!</code></pre>
+
+<h3>2. Консоль(command line) и её виды</h3>
+<p>Консоль — это программа, которая позволяет показывать текстовые сообщения и принимать текст от пользователя. С помощью консоли можно управлять программами и давать им команды, например, вводить данные или получать ответы.</p>
+<p>Виды консолей:</p>
+<ul>
+  <li><b>Командная строка (Command Line)</b> — это тип консоли, с которым мы работаем в операционных системах, таких как Windows, Linux или macOS. Это текстовый интерфейс, где вы запускаете программы и видите результаты их работы.</li>
+  <li>Если у вас Windows, то консоль вы можете открыть командой <code>Win+r</code> и введя <code>cmd</code>.</li>
+</ul>
+
+<!-- Здесь вместо вывода текста на консоль добавляем изображение -->
+<p>Пример вывода в консоле:</p>
+<img src="JLoveJava.jpg" alt="Консольный вывод" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 5px;">
+
+<p><b>Встроенные консоли в IDE</b> — большинство современных сред разработки, таких как IntelliJ IDEA, имеют встроенную консоль, которая позволяет запускать программы и выводить результаты прямо в интерфейсе IDE.</p>
+<img src="JLoveJava.jpg" alt="Консольный вывод" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 5px;">
+
+<h3>3. Методы ввода и вывода</h3>
+<p>Для вывода данных мы используем несколько методов:</p>
+<ul>
+  <li><code>print()</code> — выводит данные в консоль без перехода на новую строку.</li>
+  <li><code>println()</code> — выводит данные с переводом курсора на новую строку.</li>
+  <li><code>printf()</code> — выводит данные в формате с использованием специальных шаблонов (например, для чисел и строк).</li>
+</ul>
+
+<h3>Пример использования методов:</h3>
+<pre class="line-numbers"><code class="language-java">// Пример использования методов print, println и printf
+public class PrintMethodsExample &#123;
+    public static void main(String[] args) &#123;
+        // Пример метода print()
+        System.out.print("Hello, ");
+        System.out.print("world!");
+
+        // Пример метода println()
+        System.out.println(" Это пример println.");
+        System.out.println("Новая строка начинается здесь.");
+
+        // Пример метода printf()
+        int age = 25;
+        System.out.printf("Ваш возраст: %d лет\n", age);
+    &#125;
+&#125;</code></pre>
+
+<p>В результате выполнения этой программы на консоль будет выведено:</p>
+
+<pre class="console-output"><code>Hello, world! Это пример println.
+Новая строка начинается здесь.
+Ваш возраст: 25 лет</code></pre>
+
+<p>Для ввода данных используем класс <code>Scanner</code>. С его помощью можно получать строки, числа и другие типы данных от пользователя.</p>
+<pre class="line-numbers"><code class="language-java">Scanner scanner = new Scanner(System.in);
+System.out.print("Введите ваше имя: ");
+String name = scanner.nextLine();</code></pre>
+
+<pre class="console-output"><code>Введите ваше имя: Алёна
+Привет, Алёна!</code></pre>
+
+
+<h2>4. Какие известные программы написаны на Java:</h2>
+<ul>
+  <li>Minecraft</li>
+  <li>LinkedIn</li>
+  <li>Amazon</li>
+  <li>Spotify</li>
+  <li>NASA WorldWind</li>
+  <li>Eclipse IDE</li>
+  <li>Netflix</li>
+</ul>
+
+<!-- Блок для видео с YouTube -->
+<h2>Смотрите видео ниже:</h2>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/N8cK-lxUROY?start=0" allowfullscreen></iframe>
+</div>
+<!-- Конец контента -->
 
 
 
