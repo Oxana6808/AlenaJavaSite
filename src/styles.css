@@ -150,3 +150,10 @@ pre[class*="language-"], code[class*="language-"] {
   border-radius: 15px; /* Скругленные углы */
 }
 
+.responsive-media {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 500px;
+}
